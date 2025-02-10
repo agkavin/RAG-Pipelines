@@ -11,3 +11,4 @@ faiss-cpu
 tabulate
 pymupdf
 pypdf
+GitPython

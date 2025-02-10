@@ -12,3 +12,6 @@ tabulate
 pymupdf
 pypdf
 GitPython
+html2text
+beautifulsoup4
+duckduckgo-search

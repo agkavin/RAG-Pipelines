@@ -10,6 +10,7 @@ from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplat
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 import os
+import shutil
 
 class CSVSystem:
     def __init__(self):
@@ -23,6 +24,11 @@ class CSVSystem:
         # Setup models
         self.setup_models()
         self.setup_chat_template()
+        
+        # remove chroma db if it exists
+        if os.path.exists("./chroma_db_"):
+            print("Clearing existing vector store")
+            shutil.rmtree("./chroma_db_")
 
     def setup_models(self):
         self.embedding_model = OllamaEmbeddings(model="llama3.1")
@@ -177,10 +183,7 @@ with gr.Blocks(title="CSV Analysis System") as demo:
             examples=[
                 "What kind of data is in this CSV?",
                 "@agent How many rows are in the dataset?",
-                "Tell me about the numerical columns",
-                "@agent Calculate the mean of column X",
-                "What patterns do you see in the data?",
-                "@agent Show me the correlation between columns Y and Z"
+                "What patterns do you see in the data?"
             ],
             inputs=msg,
             label="Example Questions"

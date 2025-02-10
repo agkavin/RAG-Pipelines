@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langchain-community
+langchain-experimental
+langchain-ollama
+langchain-chroma
+langchain-google-genai
+langchain-text-splitters
+gradio
+faiss-cpu
+tabulate
+pymupdf
+pypdf

@@ -48,13 +48,3 @@ cd RAG_with_Web_Search
 3. Run the application:
    ```sh
    python3 app.py
-
-
-## Example Usage
-
-You can use the interactive Gradio UI to ask questions. Example queries:
-
-- "What are the latest developments in AI?"
-- "What is DeepSeek?"
-- "What are the main features of Python 3.12?"
-

@@ -45,6 +45,10 @@ pip install -r requirements.txt
 cd RAG_with_Web_Search
 ```
 
+3. Run the application:
+   ```sh
+   python3 app.py
+
 
 ## Example Usage
 

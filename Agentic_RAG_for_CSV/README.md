@@ -38,7 +38,7 @@ This project integrates **Retrieval-Augmented Generation (RAG)** with an **Agent
 1. Clone the repository:  
    ```bash
    git clone https://github.com/agkavin/RAG-Workshop.git
-2. Installing the dependancies:
+2. Installing the dependencies:
    ```bash
    pip install -r requirements.txt
 3. Run the application:

@@ -29,7 +29,7 @@ This project integrates **Retrieval-Augmented Generation (RAG)** with an **Agent
 ## **Tech Stack**  
 - **Programming Language**: Python  
 - **Frameworks & Libraries**:  
-  - [LangChain](https://github.com/hwchase17/langchain)  
+  - [LangChain](https://python.langchain.com/docs/introduction/)  
   - [Ollama Embeddings](https://ollama.ai)  
   - [Gradio](https://www.gradio.app/)  
   - [ChromaDB](https://www.trychroma.com/)  
@@ -37,11 +37,11 @@ This project integrates **Retrieval-Augmented Generation (RAG)** with an **Agent
 ## **Installation**  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/agentic-rag-csv.git
-   cd agentic-rag-csv
+   git clone https://github.com/agkavin/RAG-Workshop.git
 2. Installing the dependancies:
    ```bash
    pip install -r requirements.txt
 3. Run the application:
    ```bash
+   cd agentic-rag-csv
    python app.py
